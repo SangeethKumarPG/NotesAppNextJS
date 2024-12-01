@@ -35,7 +35,6 @@ function ChatToDocument({ doc }: {
             const documentData = doc.get('document-store').toJSON();
             const res = await fetch(
                 `${process.env.NEXT_PUBLIC_BASE_URL}/chattodocument`,
-                // `http://localhost:8787/chattodocument`,
                 {
                     method: 'POST',
                     headers:{
